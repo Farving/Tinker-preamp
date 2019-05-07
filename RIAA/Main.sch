@@ -1,0 +1,246 @@
+EESchema Schematic File Version 4
+LIBS:Main-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5600 3800 5400 3800
+Wire Wire Line
+	5450 3700 5450 2900
+Wire Wire Line
+	5600 3700 5450 3700
+Wire Wire Line
+	5500 3600 5600 3600
+Wire Wire Line
+	5500 2800 5500 3600
+Wire Wire Line
+	5400 3000 5600 3000
+Wire Wire Line
+	5450 2900 5600 2900
+Connection ~ 5450 3700
+Wire Wire Line
+	5450 4250 5450 3700
+Wire Wire Line
+	5500 2800 5600 2800
+$Sheet
+S 5600 3500 800  600 
+U 5C31C3F9
+F0 "RIAA_R" 50
+F1 "RIAA.sch" 50
+F2 "VCC" I L 5600 3600 50 
+F3 "VEE" I L 5600 3800 50 
+F4 "In" I L 5600 3950 50 
+F5 "Out" O R 6400 3950 50 
+F6 "AGND" I L 5600 3700 50 
+$EndSheet
+$Sheet
+S 5600 2700 800  600 
+U 5C1FA7DC
+F0 "RIAA_L" 50
+F1 "RIAA.sch" 50
+F2 "VCC" I L 5600 2800 50 
+F3 "VEE" I L 5600 3000 50 
+F4 "In" I L 5600 3150 50 
+F5 "Out" O R 6400 3150 50 
+F6 "AGND" I L 5600 2900 50 
+$EndSheet
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5C6A2C3B
+P 5450 1600
+F 0 "J3" V 5510 1740 50  0000 L CNN
+F 1 "JST_PH_B3B-PH-K" V 5601 1740 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 5450 1600 50  0001 C CNN
+F 3 "~" H 5450 1600 50  0001 C CNN
+	1    5450 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 5C6A2CED
+P 7450 3550
+F 0 "J6" H 7423 3573 50  0000 R CNN
+F 1 "JST_PH_S3B-PH-K" H 7423 3482 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 7450 3550 50  0001 C CNN
+F 3 "~" H 7450 3550 50  0001 C CNN
+	1    7450 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 2900 5450 1800
+Connection ~ 5450 2900
+Wire Wire Line
+	5500 2800 5500 2200
+Wire Wire Line
+	5500 2200 5550 2200
+Wire Wire Line
+	5550 2200 5550 1800
+Connection ~ 5500 2800
+Wire Wire Line
+	5400 2200 5350 2200
+Wire Wire Line
+	5350 2200 5350 1800
+Wire Wire Line
+	5400 2200 5400 3000
+Connection ~ 5400 3000
+Wire Wire Line
+	5400 3000 5400 3800
+Wire Wire Line
+	4900 3150 5600 3150
+Wire Wire Line
+	4900 3950 5600 3950
+Wire Wire Line
+	5450 4250 4950 4250
+Wire Wire Line
+	4950 3850 4900 3850
+Connection ~ 4950 3850
+Wire Wire Line
+	4950 3050 4900 3050
+Wire Wire Line
+	6400 3150 6750 3150
+Wire Wire Line
+	7150 3950 6750 3950
+Wire Wire Line
+	5450 4250 7100 4250
+Connection ~ 5450 4250
+Wire Wire Line
+	7100 3850 7150 3850
+Wire Wire Line
+	7100 3850 7100 3550
+Connection ~ 7100 3850
+Wire Wire Line
+	7100 3050 7150 3050
+Wire Wire Line
+	7100 3550 7250 3550
+Connection ~ 7100 3550
+Wire Wire Line
+	6750 3150 6750 3450
+Wire Wire Line
+	6750 3450 7250 3450
+Connection ~ 6750 3150
+Wire Wire Line
+	6750 3150 7150 3150
+Connection ~ 6750 3950
+Wire Wire Line
+	6750 3950 6400 3950
+Wire Wire Line
+	6750 3650 7250 3650
+Wire Wire Line
+	6750 3650 6750 3950
+$Comp
+L PCB:Board_Module PCB1
+U 1 1 5C6ABA07
+P 6000 7150
+F 0 "PCB1" H 6043 7615 50  0000 C CNN
+F 1 "Board_Module" H 6043 7524 50  0000 C CNN
+F 2 "PCB:PCB_Board_60x37" H 6000 7150 50  0001 C CNN
+F 3 "" H 6000 7150 50  0001 C CNN
+	1    6000 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J1
+U 1 1 5C689D5D
+P 4700 3150
+F 0 "J1" H 4704 3492 50  0000 C CNN
+F 1 " RND 205-00698" H 4704 3401 50  0000 C CNN
+F 2 "Connector_Audio_Devel:RCA_Horizontal_RNDConnect" H 4700 3150 50  0001 C CNN
+F 3 "~" H 4700 3150 50  0001 C CNN
+	1    4700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J2
+U 1 1 5C689E23
+P 4700 3950
+F 0 "J2" H 4704 4292 50  0000 C CNN
+F 1 "RND 205-00699" H 4704 4201 50  0000 C CNN
+F 2 "Connector_Audio_Devel:RCA_Horizontal_RNDConnect" H 4700 3950 50  0001 C CNN
+F 3 "~" H 4700 3950 50  0001 C CNN
+	1    4700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J4
+U 1 1 5C689E4D
+P 7350 3150
+F 0 "J4" H 7117 3221 50  0000 R CNN
+F 1 "RND 205-00698" H 7117 3130 50  0000 R CNN
+F 2 "Connector_Audio_Devel:RCA_Horizontal_RNDConnect" H 7350 3150 50  0001 C CNN
+F 3 "~" H 7350 3150 50  0001 C CNN
+	1    7350 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J5
+U 1 1 5C689EAC
+P 7350 3950
+F 0 "J5" H 7117 4021 50  0000 R CNN
+F 1 "RND 205-00699" H 7117 3930 50  0000 R CNN
+F 2 "Connector_Audio_Devel:RCA_Horizontal_RNDConnect" H 7350 3950 50  0001 C CNN
+F 3 "~" H 7350 3950 50  0001 C CNN
+	1    7350 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3850 7100 4250
+Wire Wire Line
+	7100 3050 7100 3550
+Wire Wire Line
+	4950 3050 4950 3850
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C6E5E8B
+P 6000 7400
+AR Path="/5C1FAAD6/5C6E5E8B" Ref="#PWR?"  Part="1" 
+AR Path="/5C1FA8D7/5C6E5E8B" Ref="#PWR?"  Part="1" 
+AR Path="/5C1FA7DC/5C6E5E8B" Ref="#PWR?"  Part="1" 
+AR Path="/5C31C244/5C6E5E8B" Ref="#PWR?"  Part="1" 
+AR Path="/5C31C3F9/5C6E5E8B" Ref="#PWR?"  Part="1" 
+AR Path="/5C6E5E8B" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 6000 7150 50  0001 C CNN
+F 1 "GNDA" H 6005 7227 50  0000 C CNN
+F 2 "" H 6000 7400 50  0001 C CNN
+F 3 "" H 6000 7400 50  0001 C CNN
+	1    6000 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7400 6000 7350
+Wire Wire Line
+	6000 7350 6350 7350
+Wire Wire Line
+	6350 7350 6350 7250
+Wire Wire Line
+	6350 7250 6300 7250
+Wire Wire Line
+	6350 7250 6350 7050
+Wire Wire Line
+	6350 7050 6300 7050
+Connection ~ 6350 7250
+Wire Wire Line
+	6000 7350 5650 7350
+Wire Wire Line
+	5650 7350 5650 7250
+Wire Wire Line
+	5650 7250 5700 7250
+Connection ~ 6000 7350
+Wire Wire Line
+	5650 7250 5650 7050
+Wire Wire Line
+	5650 7050 5700 7050
+Connection ~ 5650 7250
+Wire Wire Line
+	4950 3850 4950 4250
+$EndSCHEMATC

@@ -1,0 +1,344 @@
+EESchema Schematic File Version 4
+LIBS:Main-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5800 3250 800  800 
+U 5C1FA90C
+F0 "Output_L_Buffer" 50
+F1 "Output buffer.sch" 50
+F2 "OutN" O R 6600 3650 50 
+F3 "InP" I L 5800 3850 50 
+F4 "InN" I L 5800 3950 50 
+F5 "Vbias" I L 5800 3700 50 
+F6 "VCC" I L 5800 3350 50 
+F7 "AGND" I L 5800 3450 50 
+F8 "VEE" I L 5800 3550 50 
+F9 "OutP" O R 6600 3550 50 
+$EndSheet
+$Sheet
+S 5800 4250 800  800 
+U 5C557404
+F0 "Output_R_Buffer" 50
+F1 "Output buffer.sch" 50
+F2 "OutN" O R 6600 4650 50 
+F3 "InP" I L 5800 4850 50 
+F4 "InN" I L 5800 4950 50 
+F5 "Vbias" I L 5800 4700 50 
+F6 "VCC" I L 5800 4350 50 
+F7 "AGND" I L 5800 4450 50 
+F8 "VEE" I L 5800 4550 50 
+F9 "OutP" O R 6600 4550 50 
+$EndSheet
+Wire Wire Line
+	5700 3350 5800 3350
+Wire Wire Line
+	5800 3450 5650 3450
+Wire Wire Line
+	5650 3450 5650 4300
+Wire Wire Line
+	5650 4450 5800 4450
+Wire Wire Line
+	5800 4350 5700 4350
+Wire Wire Line
+	5700 4350 5700 3350
+Wire Wire Line
+	5600 3550 5800 3550
+Wire Wire Line
+	5600 3550 5600 4550
+Wire Wire Line
+	5600 4550 5800 4550
+Connection ~ 5650 4450
+Wire Wire Line
+	5150 3950 5800 3950
+Wire Wire Line
+	5150 4850 5800 4850
+Wire Wire Line
+	5250 3700 5800 3700
+Wire Wire Line
+	5250 4700 5800 4700
+Wire Wire Line
+	5250 3700 5250 4400
+$Comp
+L Connector:AudioJack2_Ground J3
+U 1 1 5C734515
+P 7500 3650
+F 0 "J3" H 7267 3721 50  0000 R CNN
+F 1 "RND 205-00698" H 7267 3630 50  0000 R CNN
+F 2 "Connector_Audio_Devel:RCA_Horizontal_RNDConnect" H 7500 3650 50  0001 C CNN
+F 3 "~" H 7500 3650 50  0001 C CNN
+	1    7500 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J4
+U 1 1 5C734601
+P 7500 4650
+F 0 "J4" H 7267 4721 50  0000 R CNN
+F 1 "RND 205-00698" H 7267 4630 50  0000 R CNN
+F 2 "Connector_Audio_Devel:RCA_Horizontal_RNDConnect" H 7500 4650 50  0001 C CNN
+F 3 "~" H 7500 4650 50  0001 C CNN
+	1    7500 4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 5C734840
+P 5650 2450
+F 0 "J2" V 5710 2590 50  0000 L CNN
+F 1 "JST_PH_B3B-PH-K" V 5801 2590 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 5650 2450 50  0001 C CNN
+F 3 "~" H 5650 2450 50  0001 C CNN
+	1    5650 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3450 5650 2650
+Connection ~ 5650 3450
+Wire Wire Line
+	5700 3350 5700 2900
+Wire Wire Line
+	5700 2900 5750 2900
+Wire Wire Line
+	5750 2900 5750 2650
+Connection ~ 5700 3350
+Wire Wire Line
+	5600 3550 5600 2900
+Wire Wire Line
+	5600 2900 5550 2900
+Wire Wire Line
+	5550 2900 5550 2650
+Connection ~ 5600 3550
+Wire Wire Line
+	4550 4400 5250 4400
+Connection ~ 5250 4400
+Wire Wire Line
+	5250 4400 5250 4700
+Wire Wire Line
+	5150 3950 5150 4200
+Wire Wire Line
+	5800 3850 5050 3850
+Wire Wire Line
+	5150 4500 5150 4850
+Wire Wire Line
+	5800 4950 5050 4950
+Wire Wire Line
+	5050 4950 5050 4600
+Wire Wire Line
+	7300 3550 7250 3550
+Wire Wire Line
+	7250 4550 7300 4550
+Wire Wire Line
+	7250 4550 7250 5150
+Wire Wire Line
+	7250 5150 5650 5150
+Wire Wire Line
+	5650 4450 5650 5150
+Connection ~ 7250 4550
+$Comp
+L Connector:Conn_01x03_Male J5
+U 1 1 5C73904A
+P 7650 3300
+F 0 "J5" H 7623 3230 50  0000 R CNN
+F 1 "JST_PH_S3B-PH-K" H 7623 3321 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 7650 3300 50  0001 C CNN
+F 3 "~" H 7650 3300 50  0001 C CNN
+	1    7650 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L PCB:Board_Module PCB1
+U 1 1 5C73ADB6
+P 5600 6800
+F 0 "PCB1" H 5643 7265 50  0000 C CNN
+F 1 "Board_Module" H 5643 7174 50  0000 C CNN
+F 2 "PCB:PCB_Board_60x37" H 5600 6800 50  0001 C CNN
+F 3 "" H 5600 6800 50  0001 C CNN
+	1    5600 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6700 5200 6700
+Wire Wire Line
+	5200 6700 5200 6900
+Wire Wire Line
+	5200 6900 5300 6900
+Wire Wire Line
+	5900 6700 6000 6700
+Wire Wire Line
+	6000 6700 6000 6900
+Wire Wire Line
+	6000 6900 5900 6900
+Wire Wire Line
+	6000 6900 6000 7100
+Wire Wire Line
+	6000 7100 5600 7100
+Wire Wire Line
+	5200 7100 5200 6900
+Connection ~ 6000 6900
+Connection ~ 5200 6900
+$Comp
+L power:GNDA #PWR0101
+U 1 1 5C73D655
+P 5600 7200
+F 0 "#PWR0101" H 5600 6950 50  0001 C CNN
+F 1 "GNDA" H 5605 7027 50  0000 C CNN
+F 2 "" H 5600 7200 50  0001 C CNN
+F 3 "" H 5600 7200 50  0001 C CNN
+	1    5600 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 7200 5600 7100
+Connection ~ 5600 7100
+Wire Wire Line
+	5600 7100 5200 7100
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C7A5B1B
+P 5250 5400
+AR Path="/5C1FAAD6/5C7A5B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5C1FA8D7/5C7A5B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5C31C308/5C7A5B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5C31C310/5C7A5B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5C1FA90C/5C7A5B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5C557404/5C7A5B1B" Ref="#PWR?"  Part="1" 
+AR Path="/5C7A5B1B" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 5250 5150 50  0001 C CNN
+F 1 "GNDA" H 5255 5227 50  0000 C CNN
+F 2 "" H 5250 5400 50  0001 C CNN
+F 3 "" H 5250 5400 50  0001 C CNN
+	1    5250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5C7A5B22
+P 5250 5250
+AR Path="/5C1FAAD6/5C7A5B22" Ref="C?"  Part="1" 
+AR Path="/5C1FA8D7/5C7A5B22" Ref="C?"  Part="1" 
+AR Path="/5C31C308/5C7A5B22" Ref="C?"  Part="1" 
+AR Path="/5C31C310/5C7A5B22" Ref="C?"  Part="1" 
+AR Path="/5C1FA90C/5C7A5B22" Ref="C?"  Part="1" 
+AR Path="/5C557404/5C7A5B22" Ref="C?"  Part="1" 
+AR Path="/5C7A5B22" Ref="C5"  Part="1" 
+F 0 "C5" H 5365 5296 50  0000 L CNN
+F 1 "10u" H 5365 5205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5250 5250 50  0001 C CNN
+F 3 "~" H 5250 5250 50  0001 C CNN
+	1    5250 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 4700
+Wire Wire Line
+	5250 4700 5250 5100
+Wire Wire Line
+	6600 3650 7150 3650
+Wire Wire Line
+	7250 3550 7250 4400
+Wire Wire Line
+	6600 4650 7150 4650
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 5C7DCAF9
+P 7650 4300
+F 0 "J6" H 7623 4230 50  0000 R CNN
+F 1 "JST_PH_S3B-PH-K" H 7623 4321 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 7650 4300 50  0001 C CNN
+F 3 "~" H 7650 4300 50  0001 C CNN
+	1    7650 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 3400 7250 3400
+Wire Wire Line
+	7250 3400 7250 3550
+Connection ~ 7250 3550
+Wire Wire Line
+	7450 4400 7250 4400
+Connection ~ 7250 4400
+Wire Wire Line
+	7250 4400 7250 4550
+Connection ~ 7150 3650
+Wire Wire Line
+	7150 3650 7300 3650
+Wire Wire Line
+	7050 3550 6600 3550
+Connection ~ 7150 4650
+Wire Wire Line
+	7150 4650 7300 4650
+Wire Wire Line
+	7050 4550 6600 4550
+Wire Wire Line
+	7450 4300 7150 4300
+Wire Wire Line
+	7150 4300 7150 4650
+Wire Wire Line
+	7450 4200 7050 4200
+Wire Wire Line
+	7050 4200 7050 4550
+Wire Wire Line
+	7450 3300 7150 3300
+Wire Wire Line
+	7150 3300 7150 3650
+Wire Wire Line
+	7450 3200 7050 3200
+Wire Wire Line
+	7050 3200 7050 3550
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 5C7ECE68
+P 4350 4300
+F 0 "J1" H 4456 4678 50  0000 C CNN
+F 1 "JST_PH_S6B-PH-K" H 4456 4587 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S6B-PH-K_1x06_P2.00mm_Horizontal" H 4350 4300 50  0001 C CNN
+F 3 "~" H 4350 4300 50  0001 C CNN
+	1    4350 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4600 4550 4600
+Wire Wire Line
+	5150 4500 4550 4500
+Wire Wire Line
+	4550 4100 5050 4100
+Wire Wire Line
+	5050 4100 5050 3850
+Wire Wire Line
+	4550 4200 5150 4200
+Wire Wire Line
+	4550 4300 5650 4300
+Connection ~ 5650 4300
+Wire Wire Line
+	5650 4300 5650 4450
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C7F31A1
+P 6250 5150
+AR Path="/5C1FAAD6/5C7F31A1" Ref="#PWR?"  Part="1" 
+AR Path="/5C1FA8D7/5C7F31A1" Ref="#PWR?"  Part="1" 
+AR Path="/5C31C308/5C7F31A1" Ref="#PWR?"  Part="1" 
+AR Path="/5C31C310/5C7F31A1" Ref="#PWR?"  Part="1" 
+AR Path="/5C1FA90C/5C7F31A1" Ref="#PWR?"  Part="1" 
+AR Path="/5C557404/5C7F31A1" Ref="#PWR?"  Part="1" 
+AR Path="/5C7F31A1" Ref="#PWR0149"  Part="1" 
+F 0 "#PWR0149" H 6250 4900 50  0001 C CNN
+F 1 "GNDA" H 6255 4977 50  0000 C CNN
+F 2 "" H 6250 5150 50  0001 C CNN
+F 3 "" H 6250 5150 50  0001 C CNN
+	1    6250 5150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,247 @@
+EESchema Schematic File Version 4
+LIBS:Main-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6500 2800 800  600 
+U 5C31C308
+F0 "Phono_L_Buffer" 50
+F1 "Input Buffer.sch" 50
+F2 "VCC" I L 6500 2900 50 
+F3 "VEE" I L 6500 3100 50 
+F4 "In" I L 6500 3250 50 
+F5 "OutP" O R 7300 3200 50 
+F6 "OutN" O R 7300 3300 50 
+F7 "AGND" I L 6500 3000 50 
+$EndSheet
+$Sheet
+S 6500 3600 800  600 
+U 5C31C310
+F0 "Phono_R_Buffer" 50
+F1 "Input Buffer.sch" 50
+F2 "VCC" I L 6500 3700 50 
+F3 "VEE" I L 6500 3900 50 
+F4 "In" I L 6500 4050 50 
+F5 "OutP" O R 7300 4000 50 
+F6 "OutN" O R 7300 4100 50 
+F7 "AGND" I L 6500 3800 50 
+$EndSheet
+Wire Wire Line
+	6400 2900 6500 2900
+Wire Wire Line
+	6400 2900 6400 3700
+Wire Wire Line
+	6400 3700 6500 3700
+Wire Wire Line
+	6350 3000 6500 3000
+Wire Wire Line
+	6350 3000 6350 3800
+Wire Wire Line
+	6350 3800 6500 3800
+Wire Wire Line
+	6300 3100 6500 3100
+Wire Wire Line
+	6300 3100 6300 3900
+Wire Wire Line
+	6300 3900 6500 3900
+$Comp
+L PCB:Board_Module PCB1
+U 1 1 5C68ECBF
+P 6000 7150
+F 0 "PCB1" H 6043 7615 50  0000 C CNN
+F 1 "Board_Module" H 6043 7524 50  0000 C CNN
+F 2 "PCB:PCB_Board_60x37" H 6000 7150 50  0001 C CNN
+F 3 "" H 6000 7150 50  0001 C CNN
+	1    6000 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5C68EE3D
+P 6350 2000
+F 0 "J3" V 6410 2140 50  0000 L CNN
+F 1 "JST_PH_B3B-PH-K" V 6501 2140 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 6350 2000 50  0001 C CNN
+F 3 "~" H 6350 2000 50  0001 C CNN
+	1    6350 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3000 6350 2200
+Connection ~ 6350 3000
+Wire Wire Line
+	6400 2900 6400 2500
+Wire Wire Line
+	6400 2500 6450 2500
+Wire Wire Line
+	6450 2500 6450 2200
+Connection ~ 6400 2900
+Wire Wire Line
+	6300 3100 6300 2500
+Wire Wire Line
+	6300 2500 6250 2500
+Wire Wire Line
+	6250 2500 6250 2200
+Connection ~ 6300 3100
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5C6933F3
+P 8000 3600
+F 0 "J4" H 7973 3480 50  0000 R CNN
+F 1 "JST_PH_S4B-PH-K" H 7973 3571 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 8000 3600 50  0001 C CNN
+F 3 "~" H 8000 3600 50  0001 C CNN
+	1    8000 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 3800 6350 4300
+Wire Wire Line
+	6350 4300 5700 4300
+Connection ~ 6350 3800
+Wire Wire Line
+	7300 3300 7450 3300
+Wire Wire Line
+	7450 3300 7450 3500
+Wire Wire Line
+	7450 3500 7800 3500
+Wire Wire Line
+	7300 3200 7550 3200
+Wire Wire Line
+	7550 3200 7550 3400
+Wire Wire Line
+	7550 3400 7800 3400
+Wire Wire Line
+	7300 4000 7450 4000
+Wire Wire Line
+	7450 4000 7450 3600
+Wire Wire Line
+	7450 3600 7800 3600
+Wire Wire Line
+	7300 4100 7550 4100
+Wire Wire Line
+	7550 4100 7550 3700
+Wire Wire Line
+	7550 3700 7800 3700
+$Comp
+L Connector:AudioJack2_Ground J1
+U 1 1 5C697781
+P 5450 3100
+F 0 "J1" H 5454 3442 50  0000 C CNN
+F 1 "RND 205-00698" H 5454 3351 50  0000 C CNN
+F 2 "Connector_Audio_Devel:RCA_Horizontal_RNDConnect" H 5450 3100 50  0001 C CNN
+F 3 "~" H 5450 3100 50  0001 C CNN
+	1    5450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J2
+U 1 1 5C69782E
+P 5450 4200
+F 0 "J2" H 5454 4542 50  0000 C CNN
+F 1 "RND 205-00699" H 5454 4451 50  0000 C CNN
+F 2 "Connector_Audio_Devel:RCA_Horizontal_RNDConnect" H 5450 4200 50  0001 C CNN
+F 3 "~" H 5450 4200 50  0001 C CNN
+	1    5450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J5
+U 1 1 5C6972B7
+P 5300 3600
+F 0 "J5" H 5406 3878 50  0000 C CNN
+F 1 "JST_PH_S3B-PH-K" H 5406 3787 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 5300 3600 50  0001 C CNN
+F 3 "~" H 5300 3600 50  0001 C CNN
+	1    5300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4300 5700 4100
+Wire Wire Line
+	5700 4100 5650 4100
+Wire Wire Line
+	5700 4100 5700 3600
+Wire Wire Line
+	5700 3600 5500 3600
+Connection ~ 5700 4100
+Wire Wire Line
+	5700 3600 5700 3000
+Wire Wire Line
+	5700 3000 5650 3000
+Connection ~ 5700 3600
+Wire Wire Line
+	5650 3100 5950 3100
+Wire Wire Line
+	5950 3100 5950 3250
+Wire Wire Line
+	5950 3250 6500 3250
+Wire Wire Line
+	5650 4200 5950 4200
+Wire Wire Line
+	5950 4200 5950 4050
+Wire Wire Line
+	5950 4050 6500 4050
+Wire Wire Line
+	5500 3700 5950 3700
+Wire Wire Line
+	5950 3700 5950 4050
+Connection ~ 5950 4050
+Wire Wire Line
+	5950 3500 5950 3250
+Connection ~ 5950 3250
+Wire Wire Line
+	5500 3500 5950 3500
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C69E19E
+P 6000 7500
+AR Path="/5C1FAAD6/5C69E19E" Ref="#PWR?"  Part="1" 
+AR Path="/5C1FA8D7/5C69E19E" Ref="#PWR?"  Part="1" 
+AR Path="/5C31C308/5C69E19E" Ref="#PWR?"  Part="1" 
+AR Path="/5C31C310/5C69E19E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 7250 50  0001 C CNN
+F 1 "GNDA" H 6005 7327 50  0000 C CNN
+F 2 "" H 6000 7500 50  0001 C CNN
+F 3 "" H 6000 7500 50  0001 C CNN
+	1    6000 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7500 6000 7450
+Wire Wire Line
+	6000 7450 6350 7450
+Wire Wire Line
+	6350 7450 6350 7250
+Wire Wire Line
+	6350 7250 6300 7250
+Wire Wire Line
+	6350 7250 6350 7050
+Wire Wire Line
+	6350 7050 6300 7050
+Connection ~ 6350 7250
+Wire Wire Line
+	6000 7450 5650 7450
+Wire Wire Line
+	5650 7450 5650 7250
+Wire Wire Line
+	5650 7250 5700 7250
+Connection ~ 6000 7450
+Wire Wire Line
+	5650 7250 5650 7050
+Wire Wire Line
+	5650 7050 5700 7050
+Connection ~ 5650 7250
+$EndSCHEMATC
