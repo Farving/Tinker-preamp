@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name libray)(type Legacy)(uri C:/Repositories/Tinker-preamp/Library/libray.lib)(options "")(descr ""))
 )

@@ -627,7 +627,7 @@ U 1 1 5C945EA2
 P 7350 5300
 F 0 "J8" H 7323 5273 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 7323 5182 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7350 5300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7350 5300 50  0001 C CNN
 F 3 "~" H 7350 5300 50  0001 C CNN
 	1    7350 5300
 	-1   0    0    -1  
@@ -653,7 +653,7 @@ U 1 1 5C953FCC
 P 7350 5150
 F 0 "J7" H 7323 5030 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 7323 5121 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7350 5150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7350 5150 50  0001 C CNN
 F 3 "~" H 7350 5150 50  0001 C CNN
 	1    7350 5150
 	-1   0    0    1   
