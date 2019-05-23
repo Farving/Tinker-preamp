@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name libray)(type Legacy)(uri "C:/Users/Carsten Farving/Documents/Repositories/Sublime Merge/Tinker-preamp/Library/libray.lib")(options "")(descr ""))
+  (lib (name Main-rescue)(type Legacy)(uri ${KIPRJMOD}/Main-rescue.lib)(options "")(descr ""))
 )
