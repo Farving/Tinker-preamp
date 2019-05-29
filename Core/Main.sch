@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:Main-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -94,27 +94,9 @@ F17 "Enable" I L 7950 2950 50
 F18 "I2S_MCLK" I L 7950 2150 50 
 $EndSheet
 Wire Wire Line
-	5600 2000 5450 2000
-Wire Wire Line
 	7850 2000 7950 2000
 Wire Wire Line
-	5450 1200 5450 2000
-Connection ~ 5450 2000
-Wire Wire Line
-	5450 2000 5300 2000
-Wire Wire Line
 	7950 3150 7800 3150
-$Comp
-L PCB:Board_Module PCB1
-U 1 1 5C7BCDA2
-P 6400 7050
-F 0 "PCB1" H 6443 7515 50  0000 C CNN
-F 1 "Board_Module" H 6443 7424 50  0000 C CNN
-F 2 "PCB:PCB_Board_70x43" H 6400 7050 50  0001 C CNN
-F 3 "" H 6400 7050 50  0001 C CNN
-	1    6400 7050
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GNDA #PWR0101
 U 1 1 5C7BCE0F
@@ -291,35 +273,14 @@ Wire Wire Line
 Wire Wire Line
 	9100 4200 9350 4200
 $Comp
-L Connector:Conn_01x03_Male J3
-U 1 1 5C7E2C5F
-P 6400 700
-F 0 "J3" V 6460 840 50  0000 L CNN
-F 1 "JST_PH_S3B-PH-K" V 6551 840 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 6400 700 50  0001 C CNN
-F 3 "~" H 6400 700 50  0001 C CNN
-	1    6400 700 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5450 1200 6300 1200
-Wire Wire Line
-	6300 1200 6300 900 
-Wire Wire Line
-	7850 1200 7850 2000
-Wire Wire Line
-	6500 900  6500 1200
-Wire Wire Line
-	6400 1200 6400 900 
-$Comp
 L power:GND #PWR0102
 U 1 1 5C7EB82A
-P 6400 1200
-F 0 "#PWR0102" H 6400 950 50  0001 C CNN
-F 1 "GND" H 6405 1027 50  0000 C CNN
-F 2 "" H 6400 1200 50  0001 C CNN
-F 3 "" H 6400 1200 50  0001 C CNN
-	1    6400 1200
+P 4150 1050
+F 0 "#PWR0102" H 4150 800 50  0001 C CNN
+F 1 "GND" H 4155 877 50  0000 C CNN
+F 2 "" H 4150 1050 50  0001 C CNN
+F 3 "" H 4150 1050 50  0001 C CNN
+	1    4150 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -344,10 +305,6 @@ F 3 "" H 7800 4800 50  0001 C CNN
 	1    7800 4800
 	1    0    0    -1  
 $EndComp
-Text Label 6900 1200 0    50   ~ 0
-5V
-Text Label 5900 1200 0    50   ~ 0
-3V3
 Wire Wire Line
 	5600 2250 5300 2250
 Wire Wire Line
@@ -446,8 +403,6 @@ Wire Wire Line
 	5450 3350 5450 4250
 Connection ~ 5450 4250
 Wire Wire Line
-	6500 1200 7850 1200
-Wire Wire Line
 	7950 4500 7500 4500
 Wire Wire Line
 	7500 4500 7500 2950
@@ -465,7 +420,6 @@ Wire Wire Line
 	7950 3550 7850 3550
 Wire Wire Line
 	7850 3550 7850 2000
-Connection ~ 7850 2000
 Wire Wire Line
 	8850 2150 9100 2150
 Wire Wire Line
@@ -498,4 +452,66 @@ Wire Wire Line
 	9150 3750 9150 3700
 Wire Wire Line
 	9150 3700 9350 3700
+$Sheet
+S 4400 800  900  700 
+U 5D2713D4
+F0 "PSU" 50
+F1 "PSU.sch" 50
+F2 "Vin" I L 4400 900 50 
+F3 "3V3A" O R 5300 1200 50 
+F4 "5VA" O R 5300 900 50 
+$EndSheet
+$Comp
+L libray:Board_Module PCB1
+U 1 1 5CDDC43D
+P 6400 7050
+F 0 "PCB1" H 6443 7515 50  0000 C CNN
+F 1 "Board_Module" H 6443 7424 50  0000 C CNN
+F 2 "Library:PCB_Board_70x43" H 6400 7050 50  0001 C CNN
+F 3 "" H 6400 7050 50  0001 C CNN
+	1    6400 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1200 5400 1200
+Wire Wire Line
+	5400 1200 5400 2000
+Wire Wire Line
+	5400 2000 5300 2000
+Wire Wire Line
+	5300 900  7850 900 
+Wire Wire Line
+	7850 900  7850 2000
+Connection ~ 7850 2000
+Wire Wire Line
+	3900 900  4400 900 
+Wire Wire Line
+	4150 1000 4150 1050
+Wire Wire Line
+	5500 2000 5500 1700
+Wire Wire Line
+	5500 1700 3950 1700
+Wire Wire Line
+	3950 1700 3950 1100
+Wire Wire Line
+	3950 1100 3900 1100
+Wire Wire Line
+	3900 1000 4150 1000
+Wire Wire Line
+	5500 2000 5600 2000
+Text Label 4200 900  0    50   ~ 0
+6V
+Text Label 4250 1700 0    50   ~ 0
+3V3
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5CE69514
+P 3700 1000
+F 0 "J3" H 3672 932 50  0000 R CNN
+F 1 "JST_PH_S3B-PH-K" H 3672 1023 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 3700 1000 50  0001 C CNN
+F 3 "~" H 3700 1000 50  0001 C CNN
+	1    3700 1000
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
