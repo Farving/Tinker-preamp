@@ -21,6 +21,12 @@ _autosave-*
 *.dsn
 *.ses
 
+# Gerbers
+*.gbr
+
+# Drill files
+*.drl
+
 # Exported BOM files
 *.xml
 *.csv
@@ -28,3 +34,6 @@ _autosave-*
 
 # Exported files
 *.pdf
+
+# Footprint info cache
+fp-info-cache

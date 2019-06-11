@@ -17,7 +17,7 @@ $Sheet
 S 5800 3250 800  800 
 U 5C1FA90C
 F0 "Output_L_Buffer" 50
-F1 "Output buffer.sch" 50
+F1 "Output Buffer.sch" 50
 F2 "OutN" O R 6600 3650 50 
 F3 "InP" I L 5800 3850 50 
 F4 "InN" I L 5800 3950 50 
@@ -31,7 +31,7 @@ $Sheet
 S 5800 4250 800  800 
 U 5C557404
 F0 "Output_R_Buffer" 50
-F1 "Output buffer.sch" 50
+F1 "Output Buffer.sch" 50
 F2 "OutN" O R 6600 4650 50 
 F3 "InP" I L 5800 4850 50 
 F4 "InN" I L 5800 4950 50 
