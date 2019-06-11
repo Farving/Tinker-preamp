@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Main-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -212,7 +211,8 @@ AR Path="/5C1FAAD6/5C69E19E" Ref="#PWR?"  Part="1"
 AR Path="/5C1FA8D7/5C69E19E" Ref="#PWR?"  Part="1" 
 AR Path="/5C31C308/5C69E19E" Ref="#PWR?"  Part="1" 
 AR Path="/5C31C310/5C69E19E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6000 7250 50  0001 C CNN
+AR Path="/5C69E19E" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 6000 7250 50  0001 C CNN
 F 1 "GNDA" H 6005 7327 50  0000 C CNN
 F 2 "" H 6000 7500 50  0001 C CNN
 F 3 "" H 6000 7500 50  0001 C CNN
