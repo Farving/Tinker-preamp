@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP NE5534
+D Single Low-Noise Operational Amplifiers, DIP-8/SOIC-8
+K single opamp
+F http://www.ti.com/lit/ds/symlink/ne5534.pdf
+$ENDCMP
+#
 $CMP AD1974
 F https://www.analog.com/media/en/technical-documentation/data-sheets/ad1974.pdf
 $ENDCMP
