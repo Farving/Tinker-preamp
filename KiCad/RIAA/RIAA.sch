@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3000 4350 0    50   Input ~ 0
+Text HLabel 2700 4150 0    50   Input ~ 0
 In
 Text HLabel 7650 4150 2    50   Output ~ 0
 Out
@@ -23,23 +23,6 @@ Text HLabel 850  1100 0    50   Input ~ 0
 AGND
 Text HLabel 850  1200 0    50   Input ~ 0
 VEE
-$Comp
-L Operational_Amplifier_devel:AD797 U?
-U 1 1 5C292800
-P 4050 4250
-AR Path="/5C1FAAD6/5C292800" Ref="U?"  Part="1" 
-AR Path="/5C1FA8D7/5C292800" Ref="U?"  Part="1" 
-AR Path="/5C1FA7DC/5C292800" Ref="U4"  Part="1" 
-AR Path="/5C31C244/5C292800" Ref="U?"  Part="1" 
-AR Path="/5C31C3F9/5C292800" Ref="U1"  Part="1" 
-AR Path="/5C292800" Ref="U1"  Part="1" 
-F 0 "U4" H 4200 4400 50  0000 L CNN
-F 1 "LT1115" H 4200 4150 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4100 4300 50  0001 C CNN
-F 3 "" H 4100 4400 50  0001 C CNN
-	1    4050 4250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5C292807
@@ -111,18 +94,18 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5C29282F
-P 3150 4500
+P 2850 4300
 AR Path="/5C1FAAD6/5C29282F" Ref="C?"  Part="1" 
 AR Path="/5C1FA8D7/5C29282F" Ref="C?"  Part="1" 
 AR Path="/5C1FA7DC/5C29282F" Ref="C19"  Part="1" 
 AR Path="/5C31C244/5C29282F" Ref="C?"  Part="1" 
 AR Path="/5C31C3F9/5C29282F" Ref="C1"  Part="1" 
 AR Path="/5C29282F" Ref="C1"  Part="1" 
-F 0 "C19" H 3058 4454 50  0000 R CNN
-F 1 "100p" H 3058 4545 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3150 4500 50  0001 C CNN
-F 3 "~" H 3150 4500 50  0001 C CNN
-	1    3150 4500
+F 0 "C19" H 2758 4254 50  0000 R CNN
+F 1 "100p" H 2758 4345 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2850 4300 50  0001 C CNN
+F 3 "~" H 2850 4300 50  0001 C CNN
+	1    2850 4300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -133,8 +116,6 @@ Wire Wire Line
 	4400 3650 4150 3650
 Wire Wire Line
 	3950 3650 3700 3650
-Wire Wire Line
-	3700 4150 3750 4150
 Wire Wire Line
 	4400 3350 4150 3350
 Connection ~ 4400 3650
@@ -148,18 +129,18 @@ Connection ~ 3700 3350
 $Comp
 L power:GNDA #PWR?
 U 1 1 5C292848
-P 3150 4700
+P 2850 4500
 AR Path="/5C1FAAD6/5C292848" Ref="#PWR?"  Part="1" 
 AR Path="/5C1FA8D7/5C292848" Ref="#PWR?"  Part="1" 
 AR Path="/5C1FA7DC/5C292848" Ref="#PWR026"  Part="1" 
 AR Path="/5C31C244/5C292848" Ref="#PWR?"  Part="1" 
 AR Path="/5C31C3F9/5C292848" Ref="#PWR04"  Part="1" 
 AR Path="/5C292848" Ref="#PWR026"  Part="1" 
-F 0 "#PWR026" H 3150 4450 50  0001 C CNN
-F 1 "GNDA" H 3155 4527 50  0000 C CNN
-F 2 "" H 3150 4700 50  0001 C CNN
-F 3 "" H 3150 4700 50  0001 C CNN
-	1    3150 4700
+F 0 "#PWR026" H 2850 4250 50  0001 C CNN
+F 1 "GNDA" H 2855 4327 50  0000 C CNN
+F 2 "" H 2850 4500 50  0001 C CNN
+F 3 "" H 2850 4500 50  0001 C CNN
+	1    2850 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -481,39 +462,36 @@ Wire Wire Line
 $Comp
 L Device:R_Small R15
 U 1 1 5C2A54B3
-P 3500 4500
+P 3200 4300
 AR Path="/5C1FA7DC/5C2A54B3" Ref="R15"  Part="1" 
 AR Path="/5C31C244/5C2A54B3" Ref="R?"  Part="1" 
 AR Path="/5C31C3F9/5C2A54B3" Ref="R2"  Part="1" 
 AR Path="/5C2A54B3" Ref="R2"  Part="1" 
-F 0 "R15" H 3559 4546 50  0000 L CNN
-F 1 "47k" H 3559 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3500 4500 50  0001 C CNN
-F 3 "~" H 3500 4500 50  0001 C CNN
-	1    3500 4500
+F 0 "R15" H 3259 4346 50  0000 L CNN
+F 1 "47k" H 3259 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3200 4300 50  0001 C CNN
+F 3 "~" H 3200 4300 50  0001 C CNN
+	1    3200 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 4350 3150 4400
+	2850 4150 2850 4200
 Wire Wire Line
-	3150 4350 3500 4350
+	2850 4150 3200 4150
 Wire Wire Line
-	3500 4400 3500 4350
-Connection ~ 3500 4350
+	3200 4200 3200 4150
 Wire Wire Line
-	3500 4350 3750 4350
+	2700 4150 2850 4150
+Connection ~ 2850 4150
 Wire Wire Line
-	3000 4350 3150 4350
-Connection ~ 3150 4350
+	2850 4500 2850 4450
 Wire Wire Line
-	3150 4700 3150 4650
+	2850 4450 3200 4450
 Wire Wire Line
-	3150 4650 3500 4650
+	3200 4450 3200 4400
+Connection ~ 2850 4450
 Wire Wire Line
-	3500 4650 3500 4600
-Connection ~ 3150 4650
-Wire Wire Line
-	3150 4650 3150 4600
+	2850 4450 2850 4400
 $Comp
 L Device:R_Small R?
 U 1 1 5C2ACA1E
@@ -531,8 +509,6 @@ F 3 "~" H 4050 3350 50  0001 C CNN
 	1    4050 3350
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3700 3650 3700 4150
 $Comp
 L power:GNDA #PWR?
 U 1 1 5C2ACAF7
@@ -591,23 +567,6 @@ F 2 "Resistor_SMD:R_0402_1005Metric" H 6600 4150 50  0001 C CNN
 F 3 "~" H 6600 4150 50  0001 C CNN
 	1    6600 4150
 	0    1    1    0   
-$EndComp
-$Comp
-L Operational_Amplifier_devel:AD797 U?
-U 1 1 5C2BA890
-P 7200 4150
-AR Path="/5C1FAAD6/5C2BA890" Ref="U?"  Part="1" 
-AR Path="/5C1FA8D7/5C2BA890" Ref="U?"  Part="1" 
-AR Path="/5C1FA7DC/5C2BA890" Ref="U6"  Part="1" 
-AR Path="/5C31C244/5C2BA890" Ref="U?"  Part="1" 
-AR Path="/5C31C3F9/5C2BA890" Ref="U3"  Part="1" 
-AR Path="/5C2BA890" Ref="U3"  Part="1" 
-F 0 "U6" H 7350 4300 50  0000 L CNN
-F 1 "AD797" H 7350 4050 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 7250 4200 50  0001 C CNN
-F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf" H 7250 4300 50  0001 C CNN
-	1    7200 4150
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
@@ -679,8 +638,6 @@ F 3 "~" H 7200 2300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7550 4150 7500 4150
-Wire Wire Line
-	6850 4050 6900 4050
 $Comp
 L Device:R_Small R?
 U 1 1 5C2BA8C8
@@ -705,24 +662,20 @@ Wire Wire Line
 $Comp
 L power:GNDA #PWR?
 U 1 1 5C2C25F7
-P 6850 4300
+P 6800 4450
 AR Path="/5C1FAAD6/5C2C25F7" Ref="#PWR?"  Part="1" 
 AR Path="/5C1FA8D7/5C2C25F7" Ref="#PWR?"  Part="1" 
 AR Path="/5C1FA7DC/5C2C25F7" Ref="#PWR042"  Part="1" 
 AR Path="/5C31C244/5C2C25F7" Ref="#PWR?"  Part="1" 
 AR Path="/5C31C3F9/5C2C25F7" Ref="#PWR020"  Part="1" 
 AR Path="/5C2C25F7" Ref="#PWR042"  Part="1" 
-F 0 "#PWR042" H 6850 4050 50  0001 C CNN
-F 1 "GNDA" H 6855 4127 50  0000 C CNN
-F 2 "" H 6850 4300 50  0001 C CNN
-F 3 "" H 6850 4300 50  0001 C CNN
-	1    6850 4300
+F 0 "#PWR042" H 6800 4200 50  0001 C CNN
+F 1 "GNDA" H 6805 4277 50  0000 C CNN
+F 2 "" H 6800 4450 50  0001 C CNN
+F 3 "" H 6800 4450 50  0001 C CNN
+	1    6800 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6850 4300 6850 4250
-Wire Wire Line
-	6850 4250 6900 4250
 $Comp
 L Device:C_Small C?
 U 1 1 5C2C524F
@@ -754,8 +707,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 3550 6850 3550
 Connection ~ 6850 3550
-Wire Wire Line
-	6850 3550 6850 4050
 Wire Wire Line
 	7150 3550 7250 3550
 Connection ~ 7150 3550
@@ -831,30 +782,10 @@ Wire Wire Line
 Wire Wire Line
 	6700 4150 6850 4150
 Wire Wire Line
-	6850 4150 6850 4050
-Connection ~ 6850 4050
-Wire Wire Line
 	7650 4150 7550 4150
 Connection ~ 7550 4150
 Wire Wire Line
 	7550 2900 7550 3550
-$Comp
-L Operational_Amplifier_devel:AD797 U?
-U 1 1 5C698601
-P 5750 4150
-AR Path="/5C1FAAD6/5C698601" Ref="U?"  Part="1" 
-AR Path="/5C1FA8D7/5C698601" Ref="U?"  Part="1" 
-AR Path="/5C1FA7DC/5C698601" Ref="U5"  Part="1" 
-AR Path="/5C31C244/5C698601" Ref="U?"  Part="1" 
-AR Path="/5C31C3F9/5C698601" Ref="U2"  Part="1" 
-AR Path="/5C698601" Ref="U2"  Part="1" 
-F 0 "U5" H 5900 4300 50  0000 L CNN
-F 1 "AD797" H 5900 4050 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5800 4200 50  0001 C CNN
-F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf" H 5800 4300 50  0001 C CNN
-	1    5750 4150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5C69A5C8
@@ -962,14 +893,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 3600 5850 3600
 Wire Wire Line
-	5450 4050 5400 4050
-Wire Wire Line
-	5400 4050 5400 3600
-Wire Wire Line
 	5400 3600 5650 3600
-Wire Wire Line
-	5400 4400 5400 4050
-Connection ~ 5400 4050
 $Comp
 L Device:R_Small R18
 U 1 1 5C6B3AA4
@@ -985,8 +909,6 @@ F 3 "~" H 5100 4500 50  0001 C CNN
 	1    5100 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5450 4250 5100 4250
 Wire Wire Line
 	5100 4250 5100 4400
 Wire Wire Line
@@ -1017,7 +939,6 @@ F 3 "" H 5100 4700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5100 4250 5050 4250
-Connection ~ 5100 4250
 Wire Wire Line
 	4850 4250 4800 4250
 $Comp
@@ -1201,4 +1122,73 @@ F 3 "~" H 6350 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6450 4150 6500 4150
+$Comp
+L Amplifier_Operational:AD797 U5
+U 1 1 5D3F2B41
+P 5750 4150
+AR Path="/5C1FA7DC/5D3F2B41" Ref="U5"  Part="1" 
+AR Path="/5C31C3F9/5D3F2B41" Ref="U2"  Part="1" 
+F 0 "U5" H 6094 4196 50  0000 L CNN
+F 1 "AD797" H 6094 4105 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5800 4200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf" H 5800 4300 50  0001 C CNN
+	1    5750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD797 U6
+U 1 1 5D3F424C
+P 7200 4150
+AR Path="/5C1FA7DC/5D3F424C" Ref="U6"  Part="1" 
+AR Path="/5C31C3F9/5D3F424C" Ref="U3"  Part="1" 
+F 0 "U6" H 7544 4196 50  0000 L CNN
+F 1 "AD797" H 7544 4105 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 7250 4200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf" H 7250 4300 50  0001 C CNN
+	1    7200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD797 U4
+U 1 1 5D3F522D
+P 4050 4250
+AR Path="/5C1FA7DC/5D3F522D" Ref="U4"  Part="1" 
+AR Path="/5C31C3F9/5D3F522D" Ref="U1"  Part="1" 
+F 0 "U4" H 4394 4296 50  0000 L CNN
+F 1 "LT1115" H 4394 4205 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4100 4300 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf" H 4100 4400 50  0001 C CNN
+	1    4050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4350 3750 4350
+Wire Wire Line
+	3700 3650 3700 4350
+Wire Wire Line
+	3200 4150 3750 4150
+Connection ~ 3200 4150
+Wire Wire Line
+	5400 3600 5400 4250
+Wire Wire Line
+	5450 4250 5400 4250
+Connection ~ 5400 4250
+Wire Wire Line
+	5400 4250 5400 4400
+Wire Wire Line
+	5100 4250 5100 4050
+Wire Wire Line
+	5100 4050 5450 4050
+Connection ~ 5100 4250
+Wire Wire Line
+	6850 3550 6850 4150
+Wire Wire Line
+	6850 4150 6850 4250
+Wire Wire Line
+	6850 4250 6900 4250
+Connection ~ 6850 4150
+Wire Wire Line
+	6900 4050 6800 4050
+Wire Wire Line
+	6800 4050 6800 4450
 $EndSCHEMATC
